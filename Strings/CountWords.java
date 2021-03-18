@@ -1,15 +1,20 @@
+
 public class Solution {
 
-	public static int countWords(String str){
-	
-       int  count=1;
-        for(int i=0;i<str.length();i++)
+	public static int countWords(String s) {	
+        if(s.length()==0)
         {
-            if(str.charAt(i)==' ')
+            return 0;
+        }
+        int c=0;
+        for(int i=0;i<s.length();i++)
+        {
+            if(s.charAt(i)==' ')
             {
-                count++;
+             c++;   
             }
         }
-        return count;
-	}
+        return c+1;
+    }
+ 
 }
