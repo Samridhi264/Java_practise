@@ -1,14 +1,20 @@
 
 public class Solution {
 
-	public static void printSubstrings(String str){
-	
-        int n=str.length();
-        for (int i = 0; i < n; i++)  
-           for (int j = i+1; j <= n; j++) 
-          System.out.println(str.substring(i, j));
- 
+	public static void printSubstrings(String s) {
+        if(s.length()==0)
+        {
+            return ;
+        }
+		for(int i=0;i<s.length();i++)
+        {
+         for(int j=0;j<=i;j++)
+         {
+            System.out.print(s.charAt(j));
+         }
+            System.out.println();
+        }
+        printSubstrings(s.substring(1));
 	}
-	
 
 }
