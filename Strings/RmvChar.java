@@ -1,15 +1,13 @@
-public class solution {
+public class Solution {
 
 	public static String removeAllOccurrencesOfChar(String s, char c) {
-
-        String ans="";
+String str="";
         for(int i=0;i<s.length();i++)
         {
             if(s.charAt(i)!=c)
             {
-                ans=ans+s.charAt(i);
+              str=str+s.charAt(i);  
             }
         }
-        return ans;
-
+        return str;
 }}
